@@ -1,8 +1,12 @@
 # Lesson 1: NanoRGL
 
-This is the absolute minimum meaningful syntax I could think of: nouns and determiners that make a noun phrase. Read my [blog post](TODO) for more explanations.
+This is the absolute minimum meaningful syntax I could think of: nouns and determiners that make a noun phrase. This is almost, but not quite, a subset of the real RGL abstract syntax.
 
-Suggestions for tasks:
+Read my [blog post](TODO) for more explanations.
 
-* Write a concrete syntax for a new language
+### (Optional) tasks for lesson 1
+
+You don't need to do these in order to understand the rest of the tutorial, but I'm hoping it would be fun for you to do it.
+
+* Make a concrete syntax for a new language
 * Add something to the abstract syntax: for instance, adjectives ("big dog"), more nouns, other determiners ("my dog", "5 dogs").

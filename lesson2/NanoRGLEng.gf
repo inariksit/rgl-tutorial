@@ -17,6 +17,7 @@ concrete NanoRGLEng of NanoRGL = {
     Number = Sg | Pl ;
 
   oper
+    -- These are straight from the Foods grammar
     noun : Str -> Str -> {s : Number => Str} =
       \man,men -> {s = table {Sg => man ; Pl => men}} ;
     regNoun : Str -> {s : Number => Str} =

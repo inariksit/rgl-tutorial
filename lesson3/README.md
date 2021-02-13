@@ -2,8 +2,8 @@
 
 This directory contains two concrete syntaxes of Example. Neither of them compiles at the moment, because they are missing appropriate file paths.
 
-* [ExampleEngNano.gf](TODO) is in all ways identical to [lesson2/ExampleEngNano.gf]((https://github.com/inariksit/rgl-tutorial/blob/main/lesson2/ExampleEngNano.gf).
-* [ExampleEngRGLAbstract.gf](TODO) is like [lesson0/ExampleEng](https://github.com/inariksit/rgl-tutorial/blob/main/lesson0/ExampleEng.gf), but uses the underlying RGL abstract syntax.
+* [ExampleEngNano.gf](https://github.com/inariksit/rgl-tutorial/blob/main/lesson3/ExampleEngNano.gf) is in all ways identical to [lesson2/ExampleEngNano.gf](https://github.com/inariksit/rgl-tutorial/blob/main/lesson2/ExampleEngNano.gf).
+* [ExampleEngRGLAbstract.gf](https://github.com/inariksit/rgl-tutorial/blob/main/lesson3/ExampleEngRGLAbstract.gf) is like [lesson0/ExampleEng](https://github.com/inariksit/rgl-tutorial/blob/main/lesson0/ExampleEng.gf), but uses the underlying RGL abstract syntax.
 
 ### GF modules in different directories
 

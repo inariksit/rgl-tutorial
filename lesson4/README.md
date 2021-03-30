@@ -8,9 +8,21 @@ if you haven't read it already.
 
 ### Tasks for lesson 4
 
-* Create an overloaded `mkN` in NanoAPIEng. You can reuse the opers `noun` and  `regNoun` from lesson1/NanoRGLEng.
+* Create an overloaded `mkN` in NanoAPIEng.
 
-On your first attempt, you probably got this error message.
+You need to create at least two overload instances:
+
+```haskell
+oper
+  mkN = overload {
+    mkN : {- some argument(s) -} -> N ; -- The first overload instance
+    mkN : {- other argument(s) -} -> N  -- The second overload instance
+  } ;
+```
+
+In the definitions of the different `mkN` instances, you can call the opers `noun` and  `regNoun` from lesson1/NanoRGLEng.
+
+On your first attempt, you may get this error message.
 
 ```
 > - compiling NanoAPIEng.gf...
@@ -25,6 +37,20 @@ NanoAPIEng.gf:
    ** Double-check that type signature and number of arguments match.
 ```
 
-You should find the answer in [this blog post](https://inariksit.github.io/gf/2018/05/25/subtyping-gf.html#lock-fields). (If you find that the linked section doesn't make sense on its own, you can read the blog post from the beginning.)
+If you didn't get the error message, check if you got these warnings instead.
+
+```
+> compiling NanoAPIEng.gf...
+NanoAPIEng.gf:
+   NanoAPIEng.gf:
+     Happened in overloading mkN
+      Warning: missing lock field lock_N
+      Warning: missing lock field lock_N
+      Warning: missing lock field lock_N
+      Warning: missing lock field lock_N
+  write file NanoAPIEng.gfo
+```
+
+If you got either the error or the warnings, you should get rid of them. To do that, you can find the answer in [this blog post](https://inariksit.github.io/gf/2018/05/25/subtyping-gf.html#lock-fields). (If you find that the linked section doesn't make sense on its own, you can read the blog post from the beginning.)
 
 * If you extended the NanoRGL in lesson 1, add your functions to the API as well.
